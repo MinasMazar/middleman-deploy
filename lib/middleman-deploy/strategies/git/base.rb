@@ -12,6 +12,7 @@ module Middleman
             self.commit_message = commit_message
             self.user_name      = `git config --get user.name`
             self.user_email     = `git config --get user.email`
+            binding.pry
           end
 
           def process
